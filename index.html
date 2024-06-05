@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01. JS Base</title>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-        rel="stylesheet"
-    />
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"/>
     <style>
         body {
             background-color: #2e2e2e;
@@ -43,34 +40,24 @@
         <h1 class="title has-text-white">Calculator</h1>
         <div class="field">
             <div class="control">
-                <input 
-                    type="number"
-                    id="input1"
-                    class="input"
-                    placeholder="Enter first number"
-                />
+                <input type="number" id="input1" class="input" placeholder="Enter first number"/>
             </div>
         </div>
         <div class="field">
             <div class="control">
-                <input
-                    type="number"
-                    id="input2"
-                    class="input"
-                    placeholder="Enter second number"
-                />
+                <input type="number" id="input2" class="input" placeholder="Enter second number"/>
             </div>
         </div>
         <div class="buttons">
-            <button id="add" class="button is-primary">Add</button>
-            <button id="sub" class="button is-primary">Subtract</button>
-            <button id="mul" class="button is-primary">Multiply</button>
-            <button id="div" class="button is-primary">Divide</button>
+            <button id="add" class="button is-primary operation">Add</button>
+            <button id="sub" class="button is-primary operation">Subtract</button>
+            <button id="mul" class="button is-primary operation">Multiply</button>
+            <button id="div" class="button is-primary operation">Divide</button>
         </div>
         <button id="equals" class="button is-success is-fullwidth mt-2">Equals</button>
+        <button id="reset" class="button is-danger is-fullwidth mt-2">Reset</button>
         <h2 class="title has-text-white mt-3" id="result">Result: 0</h2>
     </div>
     <script src="app.js"></script>
 </body>
 </html>
-
